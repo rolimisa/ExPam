@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ScrollView} from 'react-native';
 import { TextInput, Text, Button, List } from 'react-native-paper';
-import styles from './componentes/style';
 
 export default function App() {
 
@@ -212,6 +211,63 @@ export default function App() {
             </ScrollView>
 
     );
+
 }
+const styles = StyleSheet.create({
+    background: {
+        flex: 1, 
+        width: '100%',
+        height: '100%',
+    },
+    container: {
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+    },
+    title: {
+        color: 'black', 
+        fontSize: 30,
+        fontWeight: 'bold', 
+        marginBottom: 15,
+        textAlign: 'center',
+    },
+    input: {
+        backgroundColor: '#FFF',
+        width: '45%',
+        marginBottom: 10,
+        paddingHorizontal: 8,
+    },
+    button: {
+        marginTop: 5,
+        width: '45%',
+    },
+    list: {
+        width: '45%',
+    },
+    accordion: {
+        backgroundColor: '#4A4A4A', 
+        overflow: 'hidden',
+    },
+    listText: {
+        color: 'white',
+        fontSize: 14,
+    },
+    listItem: {
+        backgroundColor: '#4A4A4A', 
+    },
+    selectedText: {
+        marginTop: 10,
+        fontSize: 8,
+        color: '#FFF',
+        textAlign: 'center',
+    },
+    novaBuscaButton: {
+        marginTop: 20,
+        width: '45%',
+    },
+});
+
+
 
 
